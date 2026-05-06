@@ -29,11 +29,11 @@ const TradePage: React.FC = () => {
           </a>
 
           <a href="#" onClick={(e) => {e.preventDefault(); navigate("/market"); }} 
-            className=" px-2 py-1 text-sm font-bold text-slate-900 dark:text-white">
+            className=" px-2 py-1 text-sm font-semibold text-slate-500 dark:text-white">
             News
           </a>
 
-          <a href="#" onClick={(e) => { e.preventDefault(); navigate("/trade"); }} className="border-b-2 border-primary px-2 py-1 text-sm font-semibold text-slate-500 dark:text-slate-400"
+          <a href="#" onClick={(e) => { e.preventDefault(); navigate("/trade"); }} className="border-b-2 border-primary px-2 py-1 text-sm font-bold text-slate-900 dark:text-slate-400"
           >
             Trade
           </a>
@@ -77,6 +77,7 @@ const TradePage: React.FC = () => {
             type="number"
             placeholder="QTY"
             value={amount}
+            className="mb-6 w-full rounded-lg border border-gray-300 p-2"
             onChange={(e) => setAmount(e.target.value)}
           />
         </div>
@@ -94,7 +95,7 @@ const TradePage: React.FC = () => {
           <p>Total</p>
           <p> $0.00</p>
         </div>
-        <button className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+        <button className="mt-3 w-full rounded-lg bg-black p-2 text-white cursor-pointer hover:bg-black-100">
           Execute Trade
         </button>
       </form>
