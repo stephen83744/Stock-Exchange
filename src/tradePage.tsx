@@ -28,12 +28,12 @@ const TradePage: React.FC = () => {
             Trends
           </a>
 
-          <a href="#" onClick={(e) => {e.preventDefault(); navigate("/marketNews"); }}
-            className="border-b-2 border-primary px-2 py-1 text-sm font-bold text-slate-900 dark:text-white">
+          <a href="#" onClick={(e) => {e.preventDefault(); navigate("/market"); }} 
+            className=" px-2 py-1 text-sm font-bold text-slate-900 dark:text-white">
             News
           </a>
 
-          <a href="#" onClick={(e) => { e.preventDefault(); navigate("/trade"); }} className="px-2 py-1 text-sm font-semibold text-slate-500 dark:text-slate-400"
+          <a href="#" onClick={(e) => { e.preventDefault(); navigate("/trade"); }} className="border-b-2 border-primary px-2 py-1 text-sm font-semibold text-slate-500 dark:text-slate-400"
           >
             Trade
           </a>
